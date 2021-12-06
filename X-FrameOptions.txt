@@ -1,0 +1,17 @@
+https://stackoverflow.com/questions/6666423/overcoming-display-forbidden-by-x-frame-options#answer-7469997
+https://pretagteam.com/question/how-to-fix-refused-to-display-in-a-frame-because-it-set-xframeoptions-to-deny
+
+https://devanswers.co/nginx-problem-refused-to-display-url-in-a-frame-because-it-set-x-frame-options-to-deny/#comment-17239
+
+https://www.imperva.com/learn/application-security/clickjacking/#:~:text=X%2DFrame%2DOptions%20allows%20content,them%20to%20the%20current%20domain.
+
+Understanding X-Frame-Options
+The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>. Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.
+
+There are two possible directives for X-Frame-Options:
+
+X-Frame-Options: DENY
+X-Frame-Options: SAMEORIGIN
+If you specify DENY, not only will attempts to load the page in a frame fail when loaded from other sites, attempts to do so will fail when loaded from the same site.
+
+On the other hand, if you specify SAMEORIGIN, you can still use the page in a frame as long as the site including it in a frame is the same as the one serving the page.
